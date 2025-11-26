@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", "arial";
+}
+
+a, input, button {
+  font: inherit;
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 680px);
+  padding-right: calc(50% - 680px);
+}
+
+.header {
+  background: #292E36;
+}
+.header .header__up {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__up-fr-button {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  background-color: transparent;
+  border: 2px solid #E1B168;
+  padding: 20px 57px;
+  color: white;
+}
+.header .header__up-sc-button {
+  border: 2px solid #E1B168;
+  background-color: #E1B168;
+  color: black;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.44px;
+  padding: 20px 86px;
+}
+
+.heading {
+  border-top: 1px solid #5C6168;
+  border-bottom: 1px solid #5C6168;
+  background-color: #292E36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  gap: 60px;
+}
+.heading-box-links {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.heading__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.home {
+  background-color: #292E36;
+  display: flex;
+  justify-content: space-between;
+}
+.home__content {
+  padding-top: 220px;
+  padding-bottom: 176px;
+}
+.home__title {
+  font-family: "Cormorant Infant";
+  color: white;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 110px;
+  letter-spacing: 0.2px;
+  max-width: 470px;
+  padding-bottom: 26px;
+}
+.home__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+  max-width: 616px;
+  padding-bottom: 35px;
+}
+.home__button {
+  border: 2px solid #E1B168;
+  background: transparent;
+  color: #E1B168;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  padding: 20px 57px;
+}
+.home__img {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 800px;
+}/*# sourceMappingURL=start-page.css.map */
