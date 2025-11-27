@@ -50,8 +50,8 @@ a, input, button {
 }
 
 .heading {
-  border-top: 1px solid #5C6168;
-  border-bottom: 1px solid #5C6168;
+  border-top: 1px solid #343942;
+  border-bottom: 1px solid #343942;
   background-color: #292E36;
   display: flex;
   justify-content: space-between;
@@ -62,6 +62,7 @@ a, input, button {
   padding-bottom: 30px;
   display: flex;
   gap: 60px;
+  list-style-type: none;
 }
 .heading-box-links {
   font-size: 20px;
@@ -187,7 +188,7 @@ a, input, button {
 
 .menu {
   padding-top: 140px;
-  padding-bottom: 200px;
+  padding-bottom: 140px;
 }
 .menu__title {
   font-size: 15px;
@@ -198,10 +199,12 @@ a, input, button {
   border-bottom: 1px solid #E1B168;
   max-width: 60px;
   margin-bottom: 12px;
+  padding-top: 4px;
 }
 .menu__parts {
   display: flex;
   gap: 56px;
+  padding-bottom: 200px;
 }
 .menu__presentation {
   display: flex;
@@ -278,4 +281,145 @@ a, input, button {
   font-size: 30px;
   line-height: 42px;
   color: black;
+}
+
+.testimonial {
+  background-color: #292E36;
+  padding-bottom: 130px;
+}
+.testimonial__div {
+  padding-top: 140px;
+}
+.testimonial__name {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  letter-spacing: 3px;
+  color: white;
+  border-top: 1px solid #E1B168;
+  border-bottom: 1px solid #E1B168;
+  max-width: 140px;
+  padding-top: 4px;
+  margin-bottom: 12px;
+}
+.testimonial__title {
+  font-family: "Cormorant Infant";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  color: white;
+  padding-bottom: 8px;
+}
+.testimonial__sub {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.testimonial__fb {
+  padding-top: 80px;
+  display: flex;
+  gap: 30px;
+  padding-left: calc(50% - 660px);
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+.testimonial__fb-card {
+  background: #343942;
+  padding-left: 40px;
+  max-width: 544px;
+  padding-right: 40px;
+}
+.testimonial__fb-up {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #797E89;
+  max-width: 464px;
+}
+.testimonial__fb-svg {
+  position: absolute;
+  z-index: 1;
+}
+.testimonial__fb-img {
+  position: relative;
+}
+.testimonial__fb-id {
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.testimonial__fb-from {
+  color: #E1B168;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.testimonial__fb-comm {
+  padding-top: 32px;
+  font-family: "Cormorant Infant";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.5px;
+  letter-spacing: 0.25px;
+  color: white;
+  width: 454px;
+}
+.testimonial__list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.testimonial__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #797E89;
+  display: inline-block;
+}
+
+.img {
+  width: 100%;
+}
+
+.offers {
+  padding-top: 140px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offers__name {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  letter-spacing: 3px;
+  border-top: 1px solid #E1B168;
+  border-bottom: 1px solid #E1B168;
+  max-width: 78px;
+  padding-top: 4px;
+}
+.offers__title {
+  font-family: "Cormorant Infant";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+.offers__sub {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  max-width: 814px;
+  color: #555555;
+  text-align: center;
 }/*# sourceMappingURL=start-page.css.map */

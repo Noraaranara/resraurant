@@ -67,6 +67,7 @@ a, input, button {
         padding-bottom: 30px;
         display: flex;
         gap: 60px;
+        list-style-type: none;
 
         &-links {
             font-size: 20px;
@@ -213,7 +214,7 @@ a, input, button {
 
 .menu {
     padding-top: 140px;
-    padding-bottom: 200px;
+    padding-bottom: 140px;
 
     &__title {
         font-size: 15px;
@@ -224,11 +225,13 @@ a, input, button {
         border-bottom: 1px solid $yellow;
         max-width: 60px;
         margin-bottom: 12px;
+        padding-top: 4px;
     }
 
     &__parts {
         display: flex;
         gap: 56px;
+        padding-bottom: 200px;
     }
 
     &__presentation {
@@ -320,5 +323,164 @@ a, input, button {
                 color: black;
             }
         }
+    }
+}
+
+.testimonial {
+    background-color: $bg;
+    padding-bottom: 130px;
+
+    &__div {
+    padding-top: 140px;
+    }
+
+    &__name {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 3px;
+        color: white;
+        border-top: 1px solid $yellow;
+        border-bottom: 1px solid $yellow;
+        max-width: 140px;
+        padding-top: 4px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-family: "Cormorant Infant";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        color: white;
+        padding-bottom: 8px;
+    }
+
+    &__sub {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: white;
+    }
+
+    &__fb {
+        padding-top: 80px;
+        display: flex;
+        gap: 30px;
+        padding-left: calc(50% - 1320px / 2);
+        overflow: hidden;
+        padding-bottom: 80px;
+
+
+        &-card {
+            background: $bg-el;
+            padding-left: 40px;
+            max-width: 544px;
+            padding-right: 40px;
+        }
+
+        &-up {
+            display: flex;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #797E89;
+            max-width: 464px;
+        }
+
+        &-svg {
+            position: absolute;
+            z-index: 1;
+        }
+
+        &-img {
+            position: relative;
+        }
+
+        &-id {
+            font-family: "Cormorant Infant";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+            color: white;
+        }
+
+        &-from {
+            color: $yellow;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+
+        &-comm {
+            padding-top: 32px;
+            font-family: "Cormorant Infant";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 37.5px;
+            letter-spacing: 0.25px;
+            color: white;
+            width: 454px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #797E89;
+        display: inline-block;
+    }
+}
+
+.img {
+    width: 100%;
+}
+
+.offers {
+    padding-top: 140px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 3px;
+        border-top: 1px solid $yellow;
+        border-bottom: 1px solid $yellow;
+        max-width: 78px;
+        padding-top: 4px;
+    }
+
+    &__title {
+        font-family: "Cormorant Infant";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    &__sub {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        max-width: 814px;
+        color: #555555;
+        text-align: center;
     }
 }
