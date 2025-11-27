@@ -131,3 +131,194 @@ a, input, button {
         height: 800px;
     }
 }
+
+.about {
+    background-color: #FFF8F5;
+
+    &__info {
+        padding-top: 100px;
+        padding-bottom: 144px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__group {
+        display: flex;
+        gap: 70px;
+    }
+
+    &__title {
+        font-family: "Cormorant Infant";
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0.2px;
+        padding-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+
+    &__story {
+        display: flex;
+        gap: 45px;
+        padding-bottom: 125px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &-plan {
+            display: flex;
+            gap: 50px;
+        }
+
+        &-title {
+            font-family: "Cormorant Infant";
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 56px;
+            letter-spacing: 0.2px;
+            padding-top: 15px;
+        }
+
+        &-sub {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+
+
+            &_litle {
+                max-width: 248px;
+            }
+        }
+
+        &-signat {
+            padding-right: 372px;
+        }
+    }
+}
+
+.menu {
+    padding-top: 140px;
+    padding-bottom: 200px;
+
+    &__title {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 3px;
+        border-top: 1px solid $yellow;
+        border-bottom: 1px solid $yellow;
+        max-width: 60px;
+        margin-bottom: 12px;
+    }
+
+    &__parts {
+        display: flex;
+        gap: 56px;
+    }
+
+    &__presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        &-info {
+            max-width: 486px;
+        }
+
+        &-title {
+            font-family: "Cormorant Infant";
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 56px;
+            letter-spacing: 0.2px;
+            padding-bottom: 12px;
+        }
+
+        &-sub {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+
+        &-btn {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.2px;
+            color: $yellow;
+            border: 2px solid $yellow;
+            padding: 20px 58px;
+            background: transparent;
+            margin-top: 30px;
+        }
+    }
+
+    &__sections {
+        display: flex;
+        flex-direction: column;
+        gap: 74px;
+    }
+
+    &__area {
+
+        &-title {
+            font-family: "Cormorant Infant";
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 50.4px;
+            letter-spacing: 0.2px;
+            padding-bottom: 40px;
+        }
+
+        &-parts {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &-dish {
+            display: flex;
+            gap: 20px;
+        }
+
+        &-name {
+            font-family: "Cormorant Infant";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+        }
+
+        &-sub {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: #555555;
+
+            &_infant {
+                font-family: "Cormorant Infant";
+                font-size: 30px;
+                line-height: 42px;
+                color: black;
+            }
+        }
+    }
+}
