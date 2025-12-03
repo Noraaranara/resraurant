@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Josefin Sans", "arial";
 }
@@ -21,14 +25,14 @@ a, input, button {
 .header {
   background: #292E36;
 }
-.header .header__up {
+.header__up {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header__up-fr-button {
+.header__up-fr-button {
   font-weight: 400;
   font-size: 22px;
   line-height: 33px;
@@ -37,8 +41,13 @@ a, input, button {
   border: 2px solid #E1B168;
   padding: 20px 57px;
   color: white;
+  transition: all 0.5s;
 }
-.header .header__up-sc-button {
+.header__up-fr-button:hover {
+  background-color: #E1B168;
+  color: #292E36;
+}
+.header__up-sc-button {
   border: 2px solid #E1B168;
   background-color: #E1B168;
   color: black;
@@ -47,6 +56,12 @@ a, input, button {
   line-height: 33px;
   letter-spacing: 0.44px;
   padding: 20px 86px;
+  transition: all 0.5s;
+}
+.header__up-sc-button:hover {
+  background-color: #292E36;
+  color: white;
+  cursor: pointer;
 }
 
 .heading {
@@ -70,10 +85,21 @@ a, input, button {
   line-height: 30px;
   letter-spacing: 0.2px;
   color: white;
+  transition: all 0.5s;
+}
+.heading-box-links:hover {
+  color: #E1B168;
+  text-decoration: underline;
 }
 .heading__icons {
   display: flex;
   gap: 20px;
+}
+.heading__icons-svg path {
+  transition: all 0.5s;
+}
+.heading__icons-svg:hover path {
+  fill: #E1B168;
 }
 
 .home {
@@ -113,6 +139,11 @@ a, input, button {
   line-height: 33px;
   letter-spacing: 0.2px;
   padding: 20px 57px;
+  transition: all 0.5s;
+}
+.home__button:hover {
+  background-color: #E1B168;
+  color: #292E36;
 }
 .home__img {
   margin-top: 10px;
@@ -133,6 +164,12 @@ a, input, button {
   display: flex;
   gap: 20px;
 }
+.about__links {
+  transition: all 0.5s;
+}
+.about__links:hover {
+  transform: scale(1.2);
+}
 .about__group {
   display: flex;
   gap: 70px;
@@ -145,11 +182,12 @@ a, input, button {
   letter-spacing: 0.2px;
   padding-bottom: 5px;
 }
-.about__subtitle {
+.about__subtitle, .blog__story-sub, .blog__sub, .info__sub, .popular__item-description, .popular__sub, .offers__sub, .testimonial__sub, .menu__area-sub, .menu__presentation-sub, .about__story-sub {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.2px;
+  color: #555555;
 }
 .about__story {
   display: flex;
@@ -165,18 +203,11 @@ a, input, button {
   display: flex;
   gap: 50px;
 }
-.about__story-title {
+.about__story-title, .reservation__title, .blog__title, .info__title, .popular__title, .offers__subname, .offers__title, .testimonial__title, .menu__presentation-title {
   font-family: "Cormorant Infant";
   font-size: 40px;
   font-weight: 400;
   line-height: 56px;
-  letter-spacing: 0.2px;
-  padding-top: 15px;
-}
-.about__story-sub {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
   letter-spacing: 0.2px;
 }
 .about__story-sub_litle {
@@ -190,7 +221,7 @@ a, input, button {
   padding-top: 140px;
   padding-bottom: 140px;
 }
-.menu__title {
+.menu__title, .footer__hours-name, .footer__contacts-name, .reservation__name, .blog__story-name, .blog__story-date, .blog__name, .info__name, .popular__name, .offers__name, .testimonial__name {
   font-size: 15px;
   font-weight: 400;
   line-height: 22.5px;
@@ -198,13 +229,13 @@ a, input, button {
   border-top: 1px solid #E1B168;
   border-bottom: 1px solid #E1B168;
   max-width: 60px;
-  margin-bottom: 12px;
   padding-top: 4px;
 }
 .menu__parts {
   display: flex;
   gap: 56px;
   padding-bottom: 200px;
+  padding-top: 12px;
 }
 .menu__presentation {
   display: flex;
@@ -216,20 +247,9 @@ a, input, button {
   max-width: 486px;
 }
 .menu__presentation-title {
-  font-family: "Cormorant Infant";
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 56px;
-  letter-spacing: 0.2px;
   padding-bottom: 12px;
 }
-.menu__presentation-sub {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-}
-.menu__presentation-btn {
+.menu__presentation-btn, .popular__btn {
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
@@ -239,6 +259,12 @@ a, input, button {
   padding: 20px 58px;
   background: transparent;
   margin-top: 30px;
+  transition: all 0.5s;
+}
+.menu__presentation-btn:hover, .popular__btn:hover {
+  background-color: #343942;
+  border-color: #343942;
+  cursor: pointer;
 }
 .menu__sections {
   display: flex;
@@ -261,20 +287,22 @@ a, input, button {
 .menu__area-dish {
   display: flex;
   gap: 20px;
+  transition: all 0.5s;
+  border-radius: 6px;
 }
-.menu__area-name {
+.menu__area-dish:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.menu__area-img {
+  border-radius: 6px;
+}
+.menu__area-name, .popular__item-name {
   font-family: "Cormorant Infant";
   font-size: 30px;
   font-weight: 400;
   line-height: 42px;
   letter-spacing: 0.2px;
-}
-.menu__area-sub {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-  color: #555555;
 }
 .menu__area-sub_infant {
   font-family: "Cormorant Infant";
@@ -291,46 +319,43 @@ a, input, button {
   padding-top: 140px;
 }
 .testimonial__name {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22.5px;
-  letter-spacing: 3px;
-  color: white;
-  border-top: 1px solid #E1B168;
-  border-bottom: 1px solid #E1B168;
   max-width: 140px;
-  padding-top: 4px;
-  margin-bottom: 12px;
+  color: white;
 }
 .testimonial__title {
-  font-family: "Cormorant Infant";
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 56px;
-  letter-spacing: 0.2px;
   color: white;
   padding-bottom: 8px;
+  padding-top: 12px;
 }
 .testimonial__sub {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.2px;
   color: white;
+}
+.testimonial__carousel {
+  width: 100%;
+  overflow: hidden;
 }
 .testimonial__fb {
   padding-top: 80px;
   display: flex;
   gap: 30px;
   padding-left: calc(50% - 660px);
-  overflow: hidden;
   padding-bottom: 80px;
+  width: 100%;
+  transition: transform 0.8s ease-in-out;
 }
 .testimonial__fb-card {
   background: #343942;
   padding-left: 40px;
   max-width: 544px;
   padding-right: 40px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+.testimonial__fb-card.active {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 10;
 }
 .testimonial__fb-up {
   display: flex;
@@ -376,50 +401,526 @@ a, input, button {
   justify-content: center;
   gap: 8px;
 }
-.testimonial__dot {
+.testimonial__indicator {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #797E89;
   display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+.testimonial__indicator.active {
+  background-color: white;
 }
 
 .img {
   width: 100%;
+  display: block;
 }
 
 .offers {
   padding-top: 140px;
   padding-bottom: 40px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .offers__name {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22.5px;
-  letter-spacing: 3px;
-  border-top: 1px solid #E1B168;
-  border-bottom: 1px solid #E1B168;
   max-width: 78px;
   padding-top: 4px;
 }
 .offers__title {
-  font-family: "Cormorant Infant";
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 56px;
-  letter-spacing: 0.2px;
   padding-top: 12px;
   padding-bottom: 8px;
 }
 .offers__sub {
+  max-width: 814px;
+  text-align: center;
+}
+.offers__div {
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+}
+.offers__item {
+  background: url(img/10.svg) no-repeat 30px 66px, url(img/offers1.svg) no-repeat;
+  transition: all 0.5s;
+}
+.offers__item-1 {
+  background: url(img/9.svg) no-repeat 26px 64px, url(img/offers2.svg) no-repeat;
+  transition: all 0.5s;
+}
+.offers__item-1:hover {
+  transform: scale(1.04);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.offers__item:hover {
+  transform: scale(1.04);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.offers__content {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+}
+.offers__price-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 82px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+.offers__only {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10.5px;
+  letter-spacing: 0.15px;
+  padding-left: 20px;
+}
+.offers__only-1 {
+  color: white;
+}
+.offers__price {
+  font-family: "Cormorant Infant";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0.2px;
+}
+.offers__price-1 {
+  color: white;
+  padding-left: 15px;
+}
+.offers__sale {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  letter-spacing: 4.5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  max-width: 212px;
+  padding-top: 4px;
+}
+.offers__subname {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.offers__subtitle {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.2px;
-  max-width: 814px;
   color: #555555;
+  max-width: 245px;
+  padding-bottom: 45px;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 140px;
+}
+.popular__name {
+  max-width: 78px;
+}
+.popular__title {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+.popular__sub {
+  padding-bottom: 50px;
+  max-width: 760px;
   text-align: center;
+}
+.popular__div {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 36px;
+}
+.popular__item {
+  transition: all 0.5s;
+  border-radius: 6px;
+}
+.popular__item-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.popular__item-description {
+  padding-top: 15px;
+}
+.popular__item:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.info {
+  background-color: #292E36;
+  padding-bottom: 140px;
+}
+.info__content {
+  display: flex;
+  gap: 100px;
+  padding-top: 140px;
+}
+.info__name {
+  max-width: 172px;
+  color: white;
+}
+.info__title {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: white;
+}
+.info__sub {
+  color: white;
+  max-width: 438px;
+}
+.info__variantion {
+  display: flex;
+  gap: 30px;
+}
+.info__card {
+  border: 20px solid #343942;
+  padding: 120px 44px 40px 44px;
+  background: url(img/opened.svg) no-repeat 78px 45px;
+}
+.info__card-2 {
+  border: 20px solid #343942;
+  padding: 120px 34px 40px 34px;
+  background: url(img/menu.svg) no-repeat 78px 45px;
+}
+.info__card-3 {
+  border: 20px solid #343942;
+  padding: 120px 30px 40px 30px;
+  background: url(img/delivery.svg) no-repeat 78px 45px;
+}
+.info__card-name {
+  font-family: "Cormorant Infant";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+
+.blog {
+  padding-top: 140px;
+  padding-bottom: 150px;
+}
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.blog__name {
+  max-width: 56px;
+}
+.blog__title {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+.blog__sub {
+  max-width: 465px;
+  text-align: center;
+}
+.blog__parts {
+  display: flex;
+  gap: 50px;
+}
+.blog__story {
+  border: solid 1px #C4C4C4;
+}
+.blog__story-img, .blog__story-img-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/story1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.blog__story-img-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/story2.jpg);
+}
+.blog__story-btn {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.44px;
+  background-color: #E1B168;
+  border: none;
+  border: none;
+  padding: 20px 58px;
+  margin: 156px;
+  transition: all 0.5s;
+}
+.blog__story-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.blog__story-value {
+  display: flex;
+  gap: 30px;
+  padding-left: 46px;
+}
+.blog__story-name, .blog__story-date {
+  max-width: 165px;
+}
+.blog__story-info {
+  padding: 26px 46px 38px 46px;
+}
+.blog__story-title {
+  max-width: 502px;
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.2px;
+  padding-bottom: 24px;
+}
+.blog__story-sub {
+  max-width: 547px;
+}
+
+.reservation {
+  background-image: url(img/reserve.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.reservation__bg {
+  padding: 140px 260px;
+}
+.reservation__content {
+  background: rgba(41, 46, 54, 0.95);
+}
+.reservation__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 38px;
+  padding-top: 140px;
+}
+.reservation__name {
+  color: white;
+  max-width: 142px;
+}
+.reservation__title {
+  color: white;
+  padding-top: 12px;
+}
+.reservation__form {
+  padding-left: 140px;
+  padding-bottom: 156px;
+}
+.reservation__group {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  row-gap: 24px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-bottom: 30px;
+}
+.reservation__input {
+  grid-column: span 4;
+  padding: 18px 0 19px 23px;
+  border: 1px solid #858585;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+}
+.reservation__input::-moz-placeholder {
+  color: white;
+}
+.reservation__input::placeholder {
+  color: white;
+}
+.reservation__input:focus {
+  outline: none;
+  color: white;
+}
+.reservation__input_big {
+  grid-column: span 6;
+}
+.reservation__btn {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  padding: 23px 54px 12px;
+  background-color: white;
+  margin-left: 200px;
+  border: none;
+  transition: all 0.5s;
+}
+.reservation__btn:hover {
+  background-color: #E1B168;
+  color: #292E36;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #292E36;
+}
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 130px;
+}
+.footer__hashtag {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  color: white;
+  padding-bottom: 60px;
+}
+.footer__sub {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+  max-width: 304px;
+  text-align: center;
+  margin-left: 38px;
+  padding-top: 10px;
+}
+.footer__social {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+.footer__social-icons path {
+  transition: all 0.5s;
+}
+.footer__social-icons:hover path {
+  fill: #E1B168;
+}
+.footer__down {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 24px;
+}
+.footer__contacts, .footer__hours {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts-name {
+  color: white;
+  max-width: 94px;
+  margin-bottom: 32px;
+}
+.footer__contacts-item, .footer__contacts-item_yellow {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.footer__contacts-item_yellow {
+  color: #E1B168;
+  transition: all 0.5s;
+}
+.footer__contacts-item_yellow:hover {
+  color: #575B62;
+}
+.footer__form {
+  margin-top: 15px;
+  margin-bottom: 66px;
+  border: 1px solid #575B62;
+}
+.footer__form-input {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  padding: 16px 303px 18px 24px;
+  border: none;
+  background: transparent;
+}
+.footer__form-input:focus {
+  outline: none;
+  color: white;
+}
+.footer__form-btn {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  padding: 16px 40px 18px 40px;
+  border: none;
+  transition: all 0.5s;
+}
+.footer__form-btn:hover {
+  background-color: #E1B168;
+  color: #292E36;
+  cursor: pointer;
+}
+.footer__hours {
+  text-align: right;
+}
+.footer__hours-name {
+  color: white;
+  max-width: 176px;
+  margin-bottom: 30px;
+  margin-left: 88px;
+}
+.footer__hours-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #E1B168;
+}
+.footer__hours-item_white {
+  color: white;
+}
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #575B62;
+  padding: 26px 0 26px;
+}
+.footer__rights-sub {
+  padding-left: calc(50% - 680px);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.footer__rights-sub_autors {
+  color: #E1B168;
+  transition: all 0.5s;
+}
+.footer__rights-sub_autors:hover {
+  color: #575B62;
+}
+.footer__rights-links {
+  display: flex;
+  gap: 20px;
+  padding-right: calc(50% - 680px);
+}
+.footer__rights-items {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #E1B168;
+  transition: all 0.5s;
+}
+.footer__rights-items:hover {
+  color: #575B62;
 }/*# sourceMappingURL=start-page.css.map */
