@@ -3,7 +3,12 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;}   
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 body {
@@ -23,7 +28,7 @@ a, input, button {
 .header {
     background: $bg;
 
-    .header__up {
+    &__up {
         padding-top: 50px;
         padding-bottom: 50px;
         display: flex;
@@ -39,6 +44,12 @@ a, input, button {
             border: 2px solid $yellow;
             padding: 20px 57px;
             color: white;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $yellow;
+                color: $bg;
+            }
         }
 
         &-sc-button {
@@ -50,6 +61,13 @@ a, input, button {
             line-height: 33px;
             letter-spacing: 0.44px;
             padding: 20px 86px;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $bg;
+                color: white;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -67,6 +85,7 @@ a, input, button {
         padding-bottom: 30px;
         display: flex;
         gap: 60px;
+        list-style-type: none;
 
         &-links {
             font-size: 20px;
@@ -74,12 +93,26 @@ a, input, button {
             line-height: 30px;
             letter-spacing: 0.2px;
             color: white;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $yellow;
+                text-decoration: underline;
+            }
         }
     }
 
     &__icons {
         display: flex;
         gap: 20px;
+
+        &-svg path {
+            transition: all 0.5s;
+        }
+
+        &-svg:hover path {
+            fill: $yellow;
+        }
     }
 }
 
@@ -123,11 +156,991 @@ a, input, button {
         line-height: 33px;
         letter-spacing: 0.2px;
         padding: 20px 57px;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $yellow;
+            color: $bg;
+        }
     }
 
     &__img {
         margin-top: 10px;
         margin-right: 10px;
         height: 800px;
+    }
+}
+
+.about {
+    background-color: #FFF8F5;
+
+    &__info {
+        padding-top: 100px;
+        padding-bottom: 144px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__links {
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__group {
+        display: flex;
+        gap: 70px;
+    }
+
+    &__title {
+        font-family: "Cormorant Infant";
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0.2px;
+        padding-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #555555;
+    }
+
+    &__story {
+        display: flex;
+        gap: 45px;
+        padding-bottom: 125px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &-plan {
+            display: flex;
+            gap: 50px;
+        }
+
+        &-title {
+            font-family: "Cormorant Infant";
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 56px;
+            letter-spacing: 0.2px;
+        }
+
+        &-sub {
+            @extend .about__subtitle;
+
+
+            &_litle {
+                max-width: 248px;
+            }
+        }
+
+        &-signat {
+            padding-right: 372px;
+        }
+    }
+}
+
+.menu {
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    &__title {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 3px;
+        border-top: 1px solid $yellow;
+        border-bottom: 1px solid $yellow;
+        max-width: 60px;
+        padding-top: 4px;
+    }
+
+    &__parts {
+        display: flex;
+        gap: 56px;
+        padding-bottom: 200px;
+        padding-top: 12px;
+    }
+
+    &__presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        &-info {
+            max-width: 486px;
+        }
+
+        &-title {
+            @extend .about__story-title;
+            padding-bottom: 12px;
+        }
+
+        &-sub {
+            @extend .about__subtitle;
+        }
+
+        &-btn {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.2px;
+            color: $yellow;
+            border: 2px solid $yellow;
+            padding: 20px 58px;
+            background: transparent;
+            margin-top: 30px;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $bg-el;
+                border-color: $bg-el;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__sections {
+        display: flex;
+        flex-direction: column;
+        gap: 74px;
+    }
+
+    &__area {
+
+        &-title {
+            font-family: "Cormorant Infant";
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 50.4px;
+            letter-spacing: 0.2px;
+            padding-bottom: 40px;
+        }
+
+        &-parts {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &-dish {
+            display: flex;
+            gap: 20px;
+            transition: all 0.5s;
+            border-radius: 6px;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3)
+            }
+        }
+
+        &-img {
+            border-radius: 6px;
+        }
+
+        &-name {
+            font-family: "Cormorant Infant";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+        }
+
+        &-sub {
+            @extend .about__subtitle;
+
+            &_infant {
+                font-family: "Cormorant Infant";
+                font-size: 30px;
+                line-height: 42px;
+                color: black;
+            }
+        }
+    }
+}
+
+.testimonial {
+    background-color: $bg;
+    padding-bottom: 130px;
+
+    &__div {
+    padding-top: 140px;
+    }
+
+    &__name {
+        @extend .menu__title;
+        max-width: 140px;
+        color: white;
+    }
+
+    &__title {
+        @extend .about__story-title;
+        color: white;
+        padding-bottom: 8px;
+        padding-top: 12px;
+    }
+
+    &__sub {
+        @extend .about__subtitle;
+        color: white;
+    }
+
+    &__carousel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__fb {
+        padding-top: 80px;
+        display: flex;
+        gap: 30px;
+        padding-left: calc(50% - 1320px / 2);
+        padding-bottom: 80px;
+        width: 100%;
+        transition: transform 0.8s ease-in-out;
+
+        &-card {
+            background: $bg-el;
+            padding-left: 40px;
+            max-width: 544px;
+            padding-right: 40px;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+
+            &.active {
+                opacity: 1;
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+                z-index: 10; 
+            }
+        }
+
+        &-up {
+            display: flex;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #797E89;
+            max-width: 464px;
+        }
+
+        &-svg {
+            position: absolute;
+            z-index: 1;
+        }
+
+        &-img {
+            position: relative;
+        }
+
+        &-id {
+            font-family: "Cormorant Infant";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+            color: white;
+        }
+
+        &-from {
+            color: $yellow;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+
+        &-comm {
+            padding-top: 32px;
+            font-family: "Cormorant Infant";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 37.5px;
+            letter-spacing: 0.25px;
+            color: white;
+            width: 454px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #797E89;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__indicator.active {
+        background-color: white;
+    }
+}
+
+.img {
+    width: 100%;
+    display: block;
+}
+
+.offers {
+    padding-top: 140px;
+    padding-bottom: 40px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name {
+        @extend .menu__title;
+        max-width: 78px;
+        padding-top: 4px;
+    }
+
+    &__title {
+        @extend .about__story-title;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    &__sub {
+        @extend .about__subtitle;
+        max-width: 814px;
+        text-align: center;
+    }
+
+    &__div {
+        display: flex;
+        gap: 30px;
+        padding-top: 40px;
+    }
+
+    &__item {
+        background: 
+            url(img/10.svg) no-repeat 30px 66px,
+            url(img/offers1.svg) no-repeat;
+            transition: all 0.5s;
+
+        &-1 {
+            background: 
+                url(img/9.svg) no-repeat 26px 64px,
+                url(img/offers2.svg) no-repeat;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.04);
+                    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3)
+                }
+        }
+
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3)
+        }
+    }
+
+    &__content {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+    }
+
+    &__price-box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 82px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+
+    &__only {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 10.5px;
+        letter-spacing: 0.15px;
+        padding-left: 20px;
+
+        &-1 {
+            color: white;
+        }
+    }
+
+    &__price {
+        font-family: "Cormorant Infant";
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0.2px;
+
+        &-1 {
+            color: white;
+            padding-left: 15px;
+        }
+    }
+
+    &__sale {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 4.5px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        max-width: 212px;
+        padding-top: 4px;
+    }
+
+    &__subname {
+        @extend .about__story-title;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #555555;
+        max-width: 245px;
+        padding-bottom: 45px;
+    }
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 140px;
+
+    &__name {
+        @extend .menu__title;
+        max-width: 78px;
+    }
+
+    &__title {
+        @extend .about__story-title;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    &__sub {
+        @extend .about__subtitle;
+        padding-bottom: 50px;
+        max-width: 760px;
+        text-align: center;
+    }
+
+    &__div {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 36px;
+    }
+
+    &__item {
+        transition: all 0.5s;
+        border-radius: 6px;
+
+        &-div {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #DCDCDC;
+        }
+
+        &-name {
+            @extend .menu__area-name;
+        }
+
+        &-description {
+            @extend .about__subtitle;
+            padding-top: 15px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3)
+        }
+    }
+
+    &__btn {
+        @extend .menu__presentation-btn;
+    }
+}
+
+.info {
+    background-color: $bg;
+    padding-bottom: 140px;
+
+    &__content {
+        display: flex;
+        gap: 100px;
+        padding-top: 140px;
+    }
+
+    &__name {
+        @extend .menu__title;
+        max-width: 172px;
+        color: white
+    }
+
+    &__title {
+        @extend .about__story-title;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        color: white
+    }
+
+    &__sub {
+        @extend .about__subtitle;
+        color: white;
+        max-width: 438px;
+    }
+
+    &__variantion {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__card {
+        border: 20px solid $bg-el;
+        padding: 120px 44px 40px 44px;
+        background: url(img/opened.svg) no-repeat 78px 45px;
+
+        &-2 {
+            border: 20px solid $bg-el;
+            padding: 120px 34px 40px 34px;
+            background: url(img/menu.svg) no-repeat 78px 45px;
+        }
+
+        &-3 {
+            border: 20px solid $bg-el;
+            padding: 120px 30px 40px 30px;
+            background: url(img/delivery.svg) no-repeat 78px 45px;
+        }
+
+        &-name {
+            font-family: "Cormorant Infant";
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 0.2px;
+            color: white;
+        }
+    }
+}
+
+.blog {
+    padding-top: 140px;
+    padding-bottom: 150px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    &__name {
+        @extend .menu__title;
+        max-width: 56px;
+    }
+
+    &__title {
+        @extend .about__story-title;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    &__sub {
+        @extend .about__subtitle;
+        max-width: 465px;
+        text-align: center;
+    }
+
+    &__parts {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__story {
+        border: solid 1px #C4C4C4;
+
+        &-img {
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.65), 
+                rgba(0, 0, 0, 0.65)), 
+                url(img/story1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+
+            &-2 {
+                @extend .blog__story-img;
+                background: 
+                linear-gradient(rgba(0, 0, 0, 0.65), 
+                rgba(0, 0, 0, 0.65)), 
+                url(img/story2.jpg);
+            }
+        }
+
+        &-btn {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.44px;
+            background-color: $yellow;
+            border: none;
+            border: none;
+            padding: 20px 58px;
+            margin: 156px;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+        }
+
+        &-value {
+            display: flex;
+            gap: 30px;
+            padding-left: 46px;
+        }
+
+        &-name {
+            @extend .menu__title;
+            max-width: 165px;
+        }
+
+        &-date {
+            @extend .blog__story-name
+        }
+
+        &-info {
+            padding: 26px 46px 38px 46px;
+
+        }
+
+        &-title {
+            max-width: 502px;
+            font-family: "Cormorant Infant";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 39px;
+            letter-spacing: 0.2px;
+            padding-bottom: 24px;
+        }
+
+        &-sub {
+            @extend .about__subtitle;
+            max-width: 547px;
+        }
+    }
+}
+
+.reservation {
+    background-image: url(img/reserve.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__bg {
+        padding: 140px 260px;
+    }
+
+    &__content {
+        background: rgba(41, 46, 54, 0.95);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 38px;
+        padding-top: 140px;
+    }
+
+    &__name {
+        @extend .menu__title;
+        color: white;
+        max-width: 142px;
+    }
+
+    &__title {
+        @extend .about__story-title;
+        color: white;
+        padding-top: 12px;
+    }
+
+    &__form {
+        padding-left: 140px;
+        padding-bottom: 156px;
+    }
+
+    &__group {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        row-gap: 24px;
+        column-gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__input {
+        grid-column: span 4;
+        padding: 18px 0 19px 23px;
+        border: 1px solid #858585;
+        background: transparent;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.2px;
+
+        &::placeholder {
+            color: white;
+        }
+
+        &:focus {
+            outline: none;
+            color: white;
+        }
+
+        &_big {
+            grid-column: span 6;
+        }
+    }
+
+    &__btn {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.2px;
+        padding: 23px 54px 12px;
+        background-color: white;
+        margin-left: 200px;
+        border: none;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $yellow;
+            color: $bg;
+            cursor: pointer
+        }
+    }
+}
+
+.footer {
+    background-color: $bg;
+
+    &__up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 130px;
+    }
+
+    &__hashtag {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.2px;
+        color: white;
+        padding-bottom: 60px;
+    }
+
+    &__sub {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: white;
+        max-width: 304px;
+        text-align: center;
+        margin-left: 38px;
+        padding-top: 10px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 60px;
+
+        &-icons path {
+            transition: all 0.5s;
+        }
+
+        &-icons:hover path {
+            fill: $yellow;
+        }
+        
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 24px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            @extend .menu__title;
+            color: white;
+            max-width: 94px;
+            margin-bottom: 32px;
+        }
+
+        &-item {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: white;
+
+            &_yellow {
+                @extend .footer__contacts-item;
+                color: $yellow;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #575B62;
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 15px;
+        margin-bottom: 66px;
+        border: 1px solid #575B62;
+
+        &-input {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.2px;
+            padding: 16px 303px 18px 24px;
+            border: none;
+            background: transparent;
+
+            &:focus {
+                outline: none;
+                color: white;
+            }
+        }
+
+        &-btn {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.2px;
+            padding: 16px 40px 18px 40px;
+            border: none;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $yellow;
+                color: $bg;
+                cursor: pointer
+            }
+        }
+    }
+
+    &__hours {
+        @extend .footer__contacts;
+        text-align: right;
+
+        &-name {
+            @extend .menu__title;
+            color: white;
+            max-width: 176px;
+            margin-bottom: 30px;
+            margin-left: 88px;
+        }
+
+        &-item {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: $yellow;
+
+            &_white {
+                color: white;
+            }
+        }
+    }
+
+    &__rights {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #575B62;
+        padding: 26px 0 26px;
+
+        &-sub {
+            padding-left: calc(50% - 1360px / 2);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: white;
+
+            &_autors {
+                color: $yellow;
+                transition: all 0.5s;
+                
+
+                &:hover {
+                    color: #575B62;
+                }
+            }
+        }
+
+        &-links {
+            display: flex;
+            gap: 20px;
+            padding-right: calc(50% - 1360px / 2);
+        }
+
+        &-items {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: $yellow;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #575B62;
+            }
+        }
     }
 }

@@ -13,20 +13,23 @@
 <body>
     <header class="header center">
         <div class="header__up">
-            <button class="header__up-fr-button">Call - 123 456 789</button>
+            <a class="header__up-fr-button" href="#">Call - 123 456 789</a>
             <a href="start-page.html"><img class="header__up-logo" src="img/logo.svg" alt="logo"></a>
-            <button class="header__up-sc-button">Reservation</button>
+            <a class="header__up-sc-button" href="#reservation">Reservation</a>
         </div>
     </header>
+
     <div class="heading">
-        <div class="heading-box center">
-            <a class="heading-box-links" href="#Home">Home</a>
-            <a class="heading-box-links" href="#About">About Us</a>
-            <a class="heading-box-links" href="#Menu">Our Menu</a>
-            <a class="heading-box-links" href="#Pages">Pages</a>
-            <a class="heading-box-links" href="#Blog">Blog</a>
-            <a class="heading-box-links" href="#Contacts">Contact Us</a>
-        </div>
+        <nav class="center">
+            <ul class="heading-box">
+                <li><a class="heading-box-links" href="#home">Home</a></li>
+                <li><a class="heading-box-links" href="#about">About Us</a></li>
+                <li><a class="heading-box-links" href="#menu">Our Menu</a></li>
+                <li><a class="heading-box-links" href="#pages">Pages</a></li>
+                <li><a class="heading-box-links" href="#blog">Blog</a></li>
+                <li><a class="heading-box-links" href="#contacts">Contact Us</a></li>
+            </ul>
+        </nav>
         <div class="heading__icons center">
             <a href="#">
                 <svg class="heading__icons-svg" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000" height="23.000000" fill="none">
@@ -55,20 +58,499 @@
             </a>
         </div>
     </div>
-    <section class="home">
+
+    <section class="home" id="home">
         <div class="home__content center">
             <h1 class="home__title">Welcome to Restaurant</h1>
             <p class="home__subtitle">The people, food and the prime locations make the perfect place good friends & family to come together and have great time.</p>
-            <button class="home__button">View Menu</button>
+            <a class="home__button" href="#">View Menu</a>
         </div>
         <div class="home__decor">
             <img class="home__img" src="img/home1.png" alt="home">
         </div>
     </section>
-    <section class="about">
+
+    <section class="about center" id="about">
         <div class="about__info">
-            
+            <div class="about__item">
+                <a href="#" class="about__links"><img src="img/link1.svg" alt="img"></a>
+                <div class="about__content">
+                    <h1 class="about__title">Locate Us</h1>
+                    <p class="about__subtitle">Riverside 25, San Diego, California</p>
+                </div>
+            </div>
+            <div class="about__group">
+                <div class="about__item">
+                    <a href="#" class="about__links"><img src="img/link2.svg" alt="img"></a>
+                    <div class="about__content">
+                        <h1 class="about__title">Open Hours</h1>
+                        <p class="about__subtitle">Mon To Fri 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <a href="#" class="about__links"><img src="img/link3.svg" alt="img"></a>
+                    <div class="about__content">
+                        <h1 class="about__title">Reservation</h1>
+                        <a class="about__subtitle" href="">restaurantate@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__story">
+            <img class="about__story-img" src="img/story.jpg" alt="story">
+            <div class="about__story-content">
+                <div class="about__story-info">
+                    <h1 class="about__story-title">The Delicious Story</h1>
+                    <p class="about__story-sub">The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.</p>
+                </div>
+                <div class="about__story-plan">
+                    <div class="about__story-info">
+                        <h1 class="about__story-title">2018</h1>
+                        <p class="about__story-sub about__story-sub_litle">Plan for this restaurant to deliver healthy food.</p>
+                    </div>
+                    <div class="about__story-info">
+                        <h1 class="about__story-title">2022</h1>
+                        <p class="about__story-sub about__story-sub_litle">Happily in the fourth year by fulfill the motto.</p>
+                    </div>
+                </div>
+                <span class="about__story-sig">JOSEFINE</span>
+                <img class="about__story-signat" src="img/signsature.svg" alt="signsature">
+            </div>
         </div>
     </section>
+
+    <section class="menu center">
+        <h4 class="menu__title" id="menu">MENU</h4>
+        <div class="menu__parts">
+            <div class="menu__presentation">
+                <div class="menu__presentation-info">
+                    <h1  class="menu__presentation-title">Try Our Special dishes</h1>
+                    <p  class="menu__presentation-sub">Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.</p>
+                </div>
+                <img  class="menu__presentation-img" src="img/menu.jpg" alt="menu">
+                <button class="menu__presentation-btn">See all dishes</button>
+            </div>
+
+            <div class="menu__sections">
+                <div class="menu__area">
+                    <h1 class="menu__area-title">Starters</h1>
+                    <div class="menu__area-parts">
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu1.jpg" alt="menu-dish1">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Raw Scallops from Erquy</h1>
+                                <p class="menu__area-sub">Shuck the scallop to that used for oysters <svg viewBox="0 0 259.734 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259.734375" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="259.734375" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$40</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu2.jpg" alt="menu-dish2">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Spring Roll</h1>
+                                <p class="menu__area-sub">Add oil to a hot pan spring onion whites <svg viewBox="0 0 272.141 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272.140625" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="272.140625" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$20</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu3.jpg" alt="menu-dish3">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">French Onion Soup</h1>
+                                <p class="menu__area-sub">Wheat flour, apple cider vinegar, bread <svg viewBox="0 0 277.328 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="277.328125" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="277.328125" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$25</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu4.jpg" alt="menu-dish4">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Tomato Bruschetta</h1>
+                                <p class="menu__area-sub">Bread, olive oil, garlic, black pepper <svg viewBox="0 0 317.531 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="317.531250" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="317.531250" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$30</span>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu__area">
+                    <h1 class="menu__area-title">Main Dish</h1>
+                    <div class="menu__area-parts">
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu5.jpg" alt="menu-dish5">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Grilled Salmon with Dill Sauce</h1>
+                                <p class="menu__area-sub">Brown sugar, salmon fillet, Dijon mustard <svg viewBox="0 0 262.938 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="262.937500" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="262.937500" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$40</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu6.jpg" alt="menu-dish6">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Roast Beef with Vegetable</h1>
+                                <p class="menu__area-sub">Green beans, rib eye, olive oil, beef <svg viewBox="0 0 320.734 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320.734375" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="320.734375" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$20</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu7.jpg" alt="menu-dish7">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Marrkesh Vegetetarian Curruy</h1>
+                                <p class="menu__area-sub">Sweet potato, eggplant, garbanzo bean <svg viewBox="0 0 273.531 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="273.531250" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="273.531250" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$25</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu8.jpg" alt="menu-dish8">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Spicy Vegan Potato Curry</h1>
+                                <p class="menu__area-sub">Coconut milk, beans, potatoes, curry powder <svg viewBox="0 0 237.531 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="237.531250" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="237.531250" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$30</span>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu__area">
+                    <h1 class="menu__area-title">Dessert</h1>
+                    <div class="menu__area-parts">
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu9.jpg" alt="menu-dish9">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Apple Pie with Cream</h1>
+                                <p class="menu__area-sub">Whipping cream, egg white, cinnamon <svg viewBox="0 0 290.141 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290.140625" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="290.140625" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$30</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="menu__area-dish">
+                            <img class="menu__area-img" src="img/menu10.jpg" alt="menu-dish10">
+                            <div class="menu__area-info">
+                                <h1 class="menu__area-name">Lemon Meringue Pie</h1>
+                                <p class="menu__area-sub">Frozen pie crust, meringue, lemon <svg viewBox="0 0 330.531 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330.531250" height="2.000000" fill="none" customFrame="#000000">
+                                    <rect id="Rectangle" width="330.531250" height="2.000000" x="0.000000" y="0.000000" fill="rgb(170,170,170)" />
+                                    </svg>
+                                    <span class="menu__area-sub_infant">$30</span>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="testimonial">
+        <div class="testimonial__div">
+            <div class="center">
+                <h4 class="testimonial__name">TESTIMONIAL</h4>
+                <h1 class="testimonial__title">Our clients say</h1>
+                <p class="testimonial__sub">We love to hear from customers, so please leave a comment or say hello in an email.</p>
+            </div>
+            <div class="testimonial__carousel">
+                <div class="testimonial__fb">
+                    <article class="testimonial__fb-card active">
+                        <div class="testimonial__fb-up">
+                            <div class="testimonial__fb-people">
+                                <img class="testimonial__fb-svg" src="img/kav.svg" alt="marks">
+                                <img class="testimonial__fb-img" src="img/people1.png" alt="people">
+                            </div>
+                            <div class="testimonial__fb-label">
+                                <h1 class="testimonial__fb-id">Natasha D</h1>
+                                <p class="testimonial__fb-from">Newyork</p>
+                            </div>
+                        </div>
+                        <div class="testimonial__fb-down">
+                            <p class="testimonial__fb-comm">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial__fb-card">
+                        <div class="testimonial__fb-up">
+                            <div class="testimonial__fb-people">
+                                <img class="testimonial__fb-svg" src="img/kav.svg" alt="marks">
+                                <img class="testimonial__fb-img" src="img/people2.png" alt="people">
+                            </div>
+                            <div class="testimonial__fb-label">
+                                <h1 class="testimonial__fb-id">Jack Sparrow</h1>
+                                <p class="testimonial__fb-from">Salt Lake City</p>
+                            </div>
+                        </div>
+                        <div class="testimonial__fb-down">
+                            <p class="testimonial__fb-comm">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial__fb-card">
+                        <div class="testimonial__fb-up">
+                            <div class="testimonial__fb-people">
+                                <img class="testimonial__fb-svg" src="img/kav.svg" alt="marks">
+                                <img class="testimonial__fb-img" src="img/people3.png" alt="people">
+                            </div>
+                            <div class="testimonial__fb-label">
+                                <h1 class="testimonial__fb-id">Martin</h1>
+                                <p class="testimonial__fb-from">San Diego</p>
+                            </div>
+                        </div>
+                        <div class="testimonial__fb-down">
+                            <p class="testimonial__fb-comm">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+                <div class="testimonial__list">
+                    <button class="testimonial__indicator active" data-slide="0"></button>
+                    <button class="testimonial__indicator" data-slide="1"></button>
+                    <button class="testimonial__indicator" data-slide="2"></button>
+                </div>
+        </div>
+    </section>
+
+    <img class="img" src="img/bg.jpg" alt="bg-lights">
+    <section class="offers center">
+        <h4 class="offers__name">OFFERS</h4>
+        <h1 class="offers__title">Our Offer dishes</h1>
+        <p class="offers__sub">Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now the dishes are in offers use it based on hunger.</p>
+        <div class="offers__div">
+            <article class="offers__item">
+                <div class="offers__content">
+                    <img src="img/burger.svg" alt="burger">
+                    <div class="offers__info">
+                        <div class="offers__price-box">
+                            <span class="offers__only">ONLY</span>
+                            <span class="offers__price">$10</span>
+                        </div>
+                        <p class="offers__sale">50% OFFER GOING</p>
+                        <h1 class="offers__subname">Chicken Burger</h1>
+                        <p class="offers__subtitle">Chicken burger with the tasty toppings and leaves.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="offers__item-1">
+                <div class="offers__content">
+                    <img src="img/pizza.svg" alt="pizza">
+                    <div class="offers__info">
+                        <div class="offers__price-box">
+                            <span class="offers__only offers__only-1">ONLY</span>
+                            <span class="offers__price offers__price-1">$9</span>
+                        </div>
+                        <p class="offers__sale">50% OFFER GOING</p>
+                        <h1 class="offers__subname">Chicken Pizza</h1>
+                        <p class="offers__subtitle">Pizza with multiple flavor and the toping are mixed.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="popular center">
+        <h4 class="popular__name">MENU</h4>
+        <h1 class="popular__title">Popular Dishes</h1>
+        <p class="popular__sub">There is a game between the waiters in restaurant to see who serves the food to each table fastest. That led to attempting the Guinness Record.</p>
+        <div class="popular__div">
+            <article class="popular__item">
+                <img src="img/popular1.jpg" alt="Chicken Manjoori">
+                <div class="popular__item-div">
+                    <h4 class="popular__item-name">Chicken Manjoori</h4>
+                    <span class="popular__item-name">$15</span>
+                </div>
+                <p class="popular__item-description">Dish relished by all age groups as a starter dish at parties.</p>
+            </article>
+            <article class="popular__item">
+                <img src="img/popular2.jpg" alt="Hotdog">
+                <div class="popular__item-div">
+                    <h4 class="popular__item-name">Hotdog</h4>
+                    <span class="popular__item-name">$10</span>
+                </div>
+                <p class="popular__item-description">Grilled sausage served in the slit of a partially sliced bun.</p>
+            </article>
+            <article class="popular__item">
+                <img src="img/popular3.jpg" alt="Fresh Salmon">
+                <div class="popular__item-div">
+                    <h4 class="popular__item-name">Fresh Salmon</h4>
+                    <span class="popular__item-name">$5</span>
+                </div>
+                <p class="popular__item-description">Beat the health blues with our Super Immune Blue Juice Recipe.</p>
+            </article>
+            <article class="popular__item">
+                <img src="img/popular4.jpg" alt="Veg Burger">
+                <div class="popular__item-div">
+                    <h4 class="popular__item-name">Veg Burger</h4>
+                    <span class="popular__item-name">$10</span>
+                </div>
+                <p class="popular__item-description">Burgers may be made from ingredients like beans.</p>
+            </article>
+        </div>
+        <a class="popular__btn" href="#menu">See all dishes</a>
+    </section>
+
+    <section class="info">
+        <div class="info__content center">
+            <div class="info__description">
+                <h1 class="info__name">WHAT WE OFFER</h1>
+                <h2 class="info__title">Our Great Services</h2>
+            <p class="info__sub">The atmosphere set the stage. It’s about more than just a dining room away from your home. food takes the spotlight as guests.</p>
+            </div>
+            <div class="info__variantion">
+                <article class="info__card">
+                    <h2 class="info__card-name">Opened 24/7</h2>
+                </article>
+                <article class="info__card-2">
+                    <h2 class="info__card-name">Special Menus</h2>
+                </article>
+                <article class="info__card-3">
+                    <h2 class="info__card-name">Home Delivery</h2>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog center">
+        <div class="blog__content" id="blog">
+            <h1 class="blog__name">BLOG</h1>
+            <h2 class="blog__title">Be First Who Read News</h2>
+            <p class="blog__sub">Explore the latest stories about our dishes, offers, events and future plans here.</p>
+        </div>
+        <div class="blog__parts">
+            <div class="blog__story">
+                <div class="blog__story-img">
+                    <button class="blog__story-btn">View More</button>
+                </div>
+                <div class="blog__story-value">
+                    <h2 class="blog__story-name">DELICIOUS</h2>
+                    <h2 class="blog__story-date">MARCH 19, 2022</h2>
+                </div>
+                <div class="blog__story-info">
+                    <h1 class="blog__story-title">The Legend of US Cuisine: The Story of Hungry People</h1>
+                    <p class="blog__story-sub">Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.</p>
+                </div>
+            </div>
+            <div class="blog__story">
+                <div class="blog__story-img-2">
+                    <button class="blog__story-btn">View More</button>
+                </div>
+                <div class="blog__story-value">
+                    <h2 class="blog__story-name">COOKING</h2>
+                    <h2 class="blog__story-date">MARCH 19, 2022</h2>
+                </div>
+                <div class="blog__story-info">
+                    <h1 class="blog__story-title">The Most Popular Delicious Food of Mediterranean Cuisine</h1>
+                    <p class="blog__story-sub">Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="reservation__bg">
+            <div class="reservation__content">
+                <div class="reservation__info">
+                    <h1 class="reservation__name">RESERVATION</h1>
+                    <h2 class="reservation__title">Book Your Table</h2>
+                </div>
+                <form class="reservation__form" action="#">
+                    <div class="reservation__group">
+                        <input class="reservation__input reservation__input_big" type="text" id="name" name="name" placeholder="Name" required>
+                        <input class="reservation__input reservation__input_big" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="reservation__input" type="text" id="persons" name="persons" placeholder="Persons" min="1" max="10" required>
+                        <input class="reservation__input" type="text" id="timing" name="timing" placeholder="Timing" required>
+                        <input class="reservation__input" type="text" id="date" name="date" placeholder="Date" required>
+                    </div>
+                    <button class="reservation__btn" type="submit">Book A Table</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__up center" id="contacts">
+            <span class="footer__hashtag">#TheTastEat</span>
+            <div class="footer__id">
+                <a href="start-page.html"><img src="img/logo.svg" alt="logo"></a>
+                <p class="footer__sub">Join our mailing list for updates, Get news & offers events.</p>
+            </div>
+            <div class="footer__social">
+                <a href="#">
+                    <svg class="footer__social-icons" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000" height="23.000000" fill="none">
+                        <rect id="IMAGE" width="24.000000" height="23.000000" x="0.000000" y="0.000000" />
+                        <path id="Vector" d="M16.7342 1.89566C18.0385 1.89941 19.2882 2.4 20.2104 3.2881C21.1327 4.17619 21.6525 5.37963 21.6564 6.63559L21.6564 16.1144C21.6525 17.3704 21.1327 18.5738 20.2104 19.4619C19.2882 20.35 18.0385 20.8506 16.7342 20.8543L6.8908 20.8543C5.58654 20.8506 4.33682 20.35 3.41456 19.4619C2.49231 18.5738 1.97247 17.3704 1.96857 16.1144L1.96857 6.63559C1.97247 5.37963 2.49231 4.17619 3.41456 3.2881C4.33682 2.4 5.58654 1.89941 6.8908 1.89566L16.7342 1.89566ZM16.7342 0L6.8908 0C3.10078 0 0 2.98594 0 6.63559L0 16.1144C0 19.7641 3.10078 22.75 6.8908 22.75L16.7342 22.75C20.5242 22.75 23.625 19.7641 23.625 16.1144L23.625 6.63559C23.625 2.98594 20.5242 0 16.7342 0Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                        <path id="Vector" d="M18.2108 6.63574C17.9187 6.63574 17.6332 6.55235 17.3904 6.39611C17.1476 6.23988 16.9584 6.01781 16.8466 5.758C16.7348 5.49818 16.7056 5.21229 16.7626 4.93647C16.8195 4.66066 16.9602 4.4073 17.1667 4.20845C17.3732 4.0096 17.6363 3.87418 17.9227 3.81931C18.2091 3.76445 18.506 3.79261 18.7758 3.90023C19.0456 4.00784 19.2762 4.19009 19.4385 4.42392C19.6007 4.65774 19.6873 4.93265 19.6873 5.21387C19.6877 5.4007 19.6498 5.58578 19.5758 5.75847C19.5017 5.93116 19.393 6.08807 19.2558 6.22018C19.1186 6.35229 18.9556 6.45701 18.7763 6.52833C18.597 6.59964 18.4048 6.63614 18.2108 6.63574ZM11.8125 7.58332C12.5913 7.58332 13.3526 7.80571 14.0002 8.22236C14.6477 8.63901 15.1524 9.23122 15.4504 9.92408C15.7485 10.617 15.8264 11.3794 15.6745 12.1149C15.5226 12.8505 15.1476 13.5261 14.5969 14.0564C14.0462 14.5867 13.3445 14.9478 12.5807 15.0941C11.8169 15.2404 11.0251 15.1654 10.3056 14.8784C9.5861 14.5914 8.97112 14.1054 8.53844 13.4818C8.10577 12.8582 7.87483 12.1251 7.87483 11.3752C7.87594 10.3698 8.29116 9.40599 9.02938 8.69511C9.76759 7.98424 10.7685 7.5844 11.8125 7.58332ZM11.8125 5.68766C10.6444 5.68766 9.50244 6.02122 8.53117 6.64617C7.55989 7.27112 6.80287 8.15939 6.35584 9.19864C5.90881 10.2379 5.79185 11.3815 6.01974 12.4847C6.24763 13.588 6.81015 14.6014 7.63615 15.3968C8.46216 16.1922 9.51455 16.7339 10.6602 16.9534C11.8059 17.1728 12.9935 17.0602 14.0727 16.6297C15.1519 16.1992 16.0744 15.4703 16.7234 14.535C17.3724 13.5997 17.7187 12.5 17.7187 11.3752C17.7187 9.86674 17.0965 8.4201 15.9888 7.35349C14.8812 6.28687 13.3789 5.68766 11.8125 5.68766Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="footer__social-icons" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000" height="23.000000" fill="none">
+                        <rect id="IMAGE" width="24.000000" height="23.000000" x="0.000000" y="0.000000" />
+                        <path id="Vector" d="M23.625 11.375C23.625 5.09336 18.3357 0 11.8125 0C5.28926 0 0 5.09336 0 11.375C0 17.0523 4.31895 21.7582 9.9668 22.6124L9.9668 14.6641L6.96674 14.6641L6.96674 11.375L9.9668 11.375L9.9668 8.86895C9.9668 6.01859 11.7308 4.44285 14.4287 4.44285C15.7212 4.44285 17.0733 4.66527 17.0733 4.66527L17.0733 7.46484L15.583 7.46484C14.1165 7.46484 13.6577 8.34133 13.6577 9.24219L13.6577 11.375L16.9335 11.375L16.4104 14.6641L13.6582 14.6641L13.6582 22.6134C19.3061 21.7598 23.625 17.0539 23.625 11.375Z" fill="rgb(255,255,255)" fill-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="footer__social-icons" viewBox="0 0 26 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.000000" height="21.000000" fill="none">
+                        <rect id="IMAGE" width="26.000000" height="21.000000" x="0.000000" y="0.000000" />
+                        <path id="Vector" d="M25.4688 2.39942C24.5192 2.81199 23.5146 3.0838 22.4866 3.20626C23.567 2.57365 24.3794 1.56863 24.7716 0.379696C23.7502 0.976961 22.6346 1.39603 21.4725 1.61895C20.9832 1.10613 20.3947 0.698161 19.7428 0.419851C19.0909 0.14154 18.3892 -0.00130113 17.6804 8.93028e-06C14.8106 8.93028e-06 12.4882 2.28868 12.4882 5.10997C12.4861 5.5024 12.5311 5.89366 12.6221 6.2754C10.5643 6.17893 8.5492 5.65397 6.70585 4.73411C4.8625 3.81425 3.23145 2.51974 1.91705 0.933407C1.45593 1.71077 1.21206 2.59773 1.21094 3.50157C1.21094 5.27344 2.13537 6.83966 3.53125 7.75723C2.70423 7.73761 1.89416 7.51872 1.1698 7.11915L1.1698 7.18243C1.1698 9.66094 2.96277 11.7229 5.33582 12.1922C4.88957 12.3112 4.42972 12.3714 3.96789 12.3715C3.64019 12.3721 3.31323 12.3403 2.99178 12.2766C3.65148 14.3068 5.57154 15.7834 7.84598 15.8256C5.99784 17.2499 3.7288 18.0197 1.39551 18.0141C0.981341 18.0135 0.56756 17.9888 0.15625 17.9402C2.52992 19.4559 5.28912 20.2577 8.10543 20.25C17.6693 20.25 22.8943 12.4611 22.8943 5.70587C22.8943 5.48438 22.8885 5.2629 22.8779 5.04669C23.892 4.32531 24.7694 3.42886 25.4688 2.39942Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="footer__social-icons" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.000000" height="24.000000" fill="none">
+                        <rect id="IMAGE" width="25.000000" height="24.000000" x="0.000000" y="0.000000" />
+                        <path id="Vector" d="M12.3152 0C5.68691 0 0.3125 5.37201 0.3125 11.9973C0.3125 16.9087 3.2703 21.1292 7.49803 22.9877C7.46588 22.1522 7.49267 21.1453 7.70701 20.2348C7.93742 19.26 9.25021 13.6952 9.25021 13.6952C9.25021 13.6952 8.86441 12.9293 8.86441 11.7992C8.86441 10.021 9.89321 8.6927 11.1792 8.6927C12.2723 8.6927 12.7974 9.51216 12.7974 10.4923C12.7974 11.5903 12.0955 13.2292 11.7365 14.7503C11.4364 16.025 12.3741 17.0587 13.6333 17.0587C15.9053 17.0587 17.4378 14.1397 17.4378 10.6798C17.4378 8.04999 15.6641 6.08436 12.4438 6.08436C8.80547 6.08436 6.53353 8.79982 6.53353 11.8313C6.53353 12.8757 6.84431 13.6148 7.32657 14.1825C7.54626 14.445 7.57841 14.5521 7.49803 14.852C7.43909 15.0716 7.31049 15.6019 7.25155 15.8161C7.17117 16.1214 6.92469 16.2285 6.65141 16.116C4.97426 15.4305 4.19194 13.5988 4.19194 11.5314C4.19194 8.12497 7.06936 4.03838 12.7706 4.03838C17.352 4.03838 20.3688 7.35371 20.3688 10.9101C20.3688 15.6179 17.7485 19.1314 13.8905 19.1314C12.5938 19.1314 11.3775 18.4298 10.9595 17.6371C10.9595 17.6371 10.2629 20.4008 10.1129 20.9364C9.86106 21.863 9.36273 22.7842 8.90728 23.5073C10.0121 23.833 11.1579 23.999 12.3098 24C18.9381 24 24.3125 18.628 24.3125 12.0027C24.3125 5.37737 18.9434 0 12.3152 0Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__down center">
+            <div class="footer__contacts">
+                <h2 class="footer__contacts-name">CONTACT</h2>
+                <a href="#" class="footer__contacts-item">5 Rue Dalou, 75015 Paris</a>
+                <a href="tel:+123456789" class="footer__contacts-item_yellow">+123 456 789</a>
+                <a href="mailto:josefin@mail.com" class="footer__contacts-item_yellow">josefin@mail.com</a>
+            </div>
+            <form class="footer__form" action="#">
+                <input class="footer__form-input" type="email" placeholder="Email">
+                <button class="footer__form-btn" type="submit">Subscribe</button>
+            </form>
+            <div class="footer__hours">
+                <h2 class="footer__hours-name">WORKING HOURS</h2>
+                <span class="footer__hours-item">Mon – Fri: <span class="footer__hours-item_white">7.00am – 6.00pm</span></span>
+                <span class="footer__hours-item">Sat: <span class="footer__hours-item_white">7.00am – 6.00pm</span></span>
+                <span class="footer__hours-item">Sun: <span class="footer__hours-item_white">8.00am – 6.00pm</span></span>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <p class="footer__rights-sub">© Copyright - TastEat | Designed by
+                <a class="footer__rights-sub_autors" href="#">VictorFlow</a>
+            - Powered by
+                <a class="footer__rights-sub_autors" href="#">Webflow</a>
+            </p>
+            <div class="footer__rights-links">
+                <a href="#" class="footer__rights-items">Styleguide</a>
+                <a href="#" class="footer__rights-items">Licenses</a>
+                <a href="#" class="footer__rights-items">Protected</a>
+            </div>
+        </div>
+    </footer>
+    <script src="start-page.js"></script>
 </body>
 </html>
