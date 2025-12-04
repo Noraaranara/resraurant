@@ -219,7 +219,6 @@ a, input, button {
 
 .menu {
   padding-top: 140px;
-  padding-bottom: 140px;
 }
 .menu__title, .footer__hours-name, .footer__contacts-name, .reservation__name, .blog__story-name, .blog__story-date, .blog__name, .info__name, .popular__name, .offers__name, .testimonial__name {
   font-size: 15px;
@@ -304,7 +303,7 @@ a, input, button {
   line-height: 42px;
   letter-spacing: 0.2px;
 }
-.menu__area-sub_infant {
+.menu__area-sub-infant {
   font-family: "Cormorant Infant";
   font-size: 30px;
   line-height: 42px;
@@ -822,18 +821,18 @@ a, input, button {
   max-width: 94px;
   margin-bottom: 32px;
 }
-.footer__contacts-item, .footer__contacts-item_yellow {
+.footer__contacts-item, .footer__contacts-item-yellow {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.2px;
   color: white;
 }
-.footer__contacts-item_yellow {
+.footer__contacts-item-yellow {
   color: #E1B168;
   transition: all 0.5s;
 }
-.footer__contacts-item_yellow:hover {
+.footer__contacts-item-yellow:hover {
   color: #575B62;
 }
 .footer__form {
@@ -884,7 +883,7 @@ a, input, button {
   letter-spacing: 0.2px;
   color: #E1B168;
 }
-.footer__hours-item_white {
+.footer__hours-item-white {
   color: white;
 }
 .footer__rights {
@@ -901,11 +900,11 @@ a, input, button {
   letter-spacing: 0.2px;
   color: white;
 }
-.footer__rights-sub_autors {
+.footer__rights-sub-autors {
   color: #E1B168;
   transition: all 0.5s;
 }
-.footer__rights-sub_autors:hover {
+.footer__rights-sub-autors:hover {
   color: #575B62;
 }
 .footer__rights-links {
