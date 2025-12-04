@@ -257,7 +257,6 @@ a, input, button {
 
 .menu {
     padding-top: 140px;
-    padding-bottom: 140px;
 
     &__title {
         font-size: 15px;
@@ -366,7 +365,7 @@ a, input, button {
         &-sub {
             @extend .about__subtitle;
 
-            &_infant {
+            &-infant {
                 font-family: "Cormorant Infant";
                 font-size: 30px;
                 line-height: 42px;
@@ -1025,7 +1024,7 @@ a, input, button {
             letter-spacing: 0.2px;
             color: white;
 
-            &_yellow {
+            &-yellow {
                 @extend .footer__contacts-item;
                 color: $yellow;
                 transition: all 0.5s;
@@ -1093,7 +1092,7 @@ a, input, button {
             letter-spacing: 0.2px;
             color: $yellow;
 
-            &_white {
+            &-white {
                 color: white;
             }
         }
@@ -1113,7 +1112,7 @@ a, input, button {
             letter-spacing: 0.2px;
             color: white;
 
-            &_autors {
+            &-autors {
                 color: $yellow;
                 transition: all 0.5s;
                 
