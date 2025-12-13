@@ -925,4 +925,11 @@ a, input, button {
 }
 .footer__rights-items:hover {
   color: #575B62;
-}/*# sourceMappingURL=start-page.css.map */
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 395px);
+    padding-right: calc(50% - 395px);
+  }
+}/*# sourceMappingURL=style.css.map */
